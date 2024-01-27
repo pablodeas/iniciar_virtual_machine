@@ -12,7 +12,6 @@ function logo () {
   echo "---------------- -------------------------------- --------------"
 }
 
-# Precisa transformar em uma função 'func menu'
 function menu () {
   echo ""
   echo "---"
@@ -28,9 +27,7 @@ function menu () {
   echo "---"
   read num
 }
-# Até aqui deve ser a função 'func menu'
 
-# Aqui vai ser a função para verificar as ações
 function option_verify () {
   case $num in
     0)
@@ -61,8 +58,7 @@ function option_verify () {
   esac
 }
 
+# Execution of the functions
 logo
 menu
 option_verify
-# Executar o menu e depois as opções
-# Nas opções, caso a opção selecionada seja inválida, deve se retornar para o menu e captar novamente a ação do usuário
